@@ -10,6 +10,7 @@ import java.util.Arrays;
 public class L1_자연수_뒤집어_배열로_만들기 {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(solution(12345)));
+        System.out.println(Arrays.toString(solution2(12345)));
     }
 
     public static int[] solution(long n) {
@@ -23,5 +24,20 @@ public class L1_자연수_뒤집어_배열로_만들기 {
 
         return answer;
 
+    }
+
+    //10씩 나눈 나머지를 구해서 푸는 솔루션.
+    public static int[] solution2(long n) {
+        String a = "" + n;
+        int[] answer = new int[a.length()];
+        int cnt=0;
+
+        while(n>0) {
+            answer[cnt]=(int)(n%10);
+            n/=10;
+            System.out.println(n);
+            cnt++;
+        }
+        return answer;
     }
 }
