@@ -13,7 +13,13 @@ public class L01_08_유효한_팰린드롬 {
 
 
     public String solution(String str) {
-        return "YES";
+        str = str.toLowerCase().replaceAll("[^a-z]", "");
+        if(str.equals(new StringBuilder(str).reverse().toString())) {
+            return "YES";
+        }
+
+        return "NO";
+
     }
 
 
