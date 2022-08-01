@@ -10,6 +10,24 @@ import java.util.Scanner;
  **/
 public class L01_11_문자열압축 {
 
+    public String inflearnSolution(String str) {
+        StringBuilder answer = new StringBuilder();
+        str += " "; //마지막 반복횟수가 있을경우 대비
+        int cnt =1;
+        for(int i =0; i<str.length()-1; i++) { //공백이 추가됬으니..
+            if(str.charAt(i) == str.charAt(i+1)) {
+                cnt++;
+            } else {
+                answer.append(str.charAt(i));
+                if(1< cnt) {
+                    answer.append(cnt);
+                }
+                cnt = 1;
+            }
+        }
+        return answer.toString();
+    }
+
     public String solution(String str) {
         StringBuilder builder = new StringBuilder();
         char nowCh = 'a';
@@ -34,10 +52,12 @@ public class L01_11_문자열압축 {
 
     public static void main(String[] args) {
         L01_11_문자열압축 program = new L01_11_문자열압축();
-        Scanner kb = new Scanner(System.in);
-        String str = kb.nextLine();
-        System.out.println(program.solution(str));
+//        Scanner kb = new Scanner(System.in);
+//        String str = kb.nextLine();
+//        System.out.println(program.solution(str));
         System.out.println(program.solution("KKHSSSSSSSE"));
-//        System.out.println(program.solution("KSTTTSEEKFKKKDJJGG"));
+        System.out.println(program.solution("KSTTTSEEKFKKKDJJGG"));
+        System.out.println(program.inflearnSolution("KKHSSSSSSSE"));
+        System.out.println(program.inflearnSolution("KSTTTSEEKFKKKDJJGG"));
     }
 }
