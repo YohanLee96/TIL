@@ -1,6 +1,4 @@
-package inflearn;
-
-import java.util.Scanner;
+package inflearn.L01;
 
 /**
  * Created by Yohan lee Created on 2022/08/01.
