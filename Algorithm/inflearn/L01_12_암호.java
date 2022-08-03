@@ -7,23 +7,17 @@ import java.util.Scanner;
  **/
 public class L01_12_암호 {
 
-    public String solution(String str, int chCount) {
-        StringBuilder builder = new StringBuilder();
-        for (int i = 0; i <str.length() ; i++) {
-            if(i % 7 == 0 && i != 0) {
-                builder.append(' ');
-            }
-            char c= str.charAt(i);
-            if(c == '#') builder.append('1');
-            else builder.append('0');
+    public String solution(String str , int chCount) {
+        StringBuilder answer = new StringBuilder();
+        for (int i = 0; i < chCount; i++) {
+            //2진수로 변경
+            String tmp = str.substring(0, 7).replace('#', '1').replace('*', '0');
+            int num = Integer.parseInt(tmp, 2); //10진수로 변경
+            answer.append((char)num); //ASCII번호에맞게 문자로 변경
+            str = str.substring(7); //처리한 문자열 자르기
         }
-        String[] arr = builder.toString().split(" ");
-        StringBuilder result = new StringBuilder();
-        for (String s : arr) {
-            int decimalNum = Integer.parseInt(s, 2);
-            result.append((char)decimalNum);
-        }
-        return result.toString().trim();
+
+        return answer.toString();
     }
 
     public static void main(String[] args) {
