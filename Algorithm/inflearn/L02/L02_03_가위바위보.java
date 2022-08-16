@@ -1,6 +1,5 @@
 package inflearn.L02;
 
-import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -14,9 +13,26 @@ import java.util.Scanner;
  **/
 public class L02_03_가위바위보 {
 
-    public List<String> solution(int n, int[] aResult, int[] bResult) {
-        
-        return null;
+    public String solution(int n, int[] a, int[] b) {
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < n; i++) {
+            int aResult = a[i];
+            int bResult = b[i];
+            if(aResult == 1 && bResult == 3) {
+                result.append("A");
+            } else if (aResult == 2 && bResult ==1) {
+                result.append("A");
+            } else if (aResult == 3 && bResult ==2) {
+                result.append("A");
+            } else if(aResult == bResult) {
+                result.append("D");
+            } else { //A가 이기는 경우와 비기는경우를 모두 체크했으니, 나머지는 B승리.
+                result.append("B");
+            }
+
+        }
+
+        return result.toString();
     }
 
 
@@ -32,6 +48,8 @@ public class L02_03_가위바위보 {
         for (int i = 0; i <n; i++) {
             bArr[i] = kb.nextInt();
         }
-        System.out.println(program.solution(n, aArr, bArr));
+        for (char c : program.solution(n, aArr, bArr).toCharArray()) {
+            System.out.println(c);
+        }
     }
 }
