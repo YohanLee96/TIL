@@ -22,14 +22,10 @@ public class L04_02_아나그램 {
             charMap.put(c, charMap.getOrDefault(c, 0) +1);
         }
         for (char c : str2.toCharArray()) {
-            if(charMap.containsKey(c)) {
-                charMap.put(c, charMap.get(c) -1);
+            if(!charMap.containsKey(c) || charMap.get(c) == 0) {
+                return "NO";
             }
-        }
-        for (char c : charMap.keySet()) {
-            if(0 != charMap.get(c)) {
-                result = "NO";
-            }
+            charMap.put(c, charMap.get(c) -1);
         }
         return result;
     }
