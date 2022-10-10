@@ -1,0 +1,24 @@
+<table>
+    <tr>
+      <th>이름</th>
+      <th>나이</th>
+      <th>버튼</th>
+    </tr>
+    <tr>
+      <td>zero</td>
+      <td>25</td>
+      <td><a data-id="1" data-user-name="Yohan" data-married="true" onclick="javascript:fnShow(this);">표출</a></td>
+    </tr>
+    <tr>
+      <td>nero</td>
+      <td>32</td>
+      <td><a data-id="2" data-user-name="MyungJun" data-married="false" onclick="javascript:fnShow(this);">표출</a></td>
+    </tr>
+  </table>
+  <script>
+    function fnShow(data){
+      console.log(data.dataset);
+      console.log(data.dataset.id);
+      console.log(data.dataset.userName);
+    }
+  </script>
