@@ -1,0 +1,47 @@
+app:
+  datasource:
+    jdbc-url : jdbc:h2:tcp://localhost/~/test
+    username : sa
+    maximum-pool-size : 30
+
+server :
+  tomcat :
+    remote-ip-header: x-forwarded-for
+    protocol-header : x-forwarded-proto
+
+
+
+
+
+management :
+#  server :
+#    port : 9000 #액추에이터 관리 포트를 별도로 지정 가능.
+#    address : 127.0.0.1
+
+  info :
+    defaults:
+      enabled: true #Spring-Boot에서 제공하는 자동구성된 InfoContributor 를 모두 활성화 한다.
+  endpoints :
+    web :
+      exposure:
+        include: httptrace
+      # include: "*"  #모든 종점포인트를 사용한다.
+
+
+      base-path: /act #액추에이터 기본 경로
+      path-mapping.health : healthcheck #health정보 경로명 변경.
+
+      cors: # http://www.naver.com 도메인은 GET과 POST 통신만 허용한다.
+        allowed-origins: http://www.naver.com
+        allowed-methods: GET,POST
+
+
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      show-details: always  #상세정보까지 모두 표출.
+
+logging:
+  file:
+    name: boot-spring-boot.log

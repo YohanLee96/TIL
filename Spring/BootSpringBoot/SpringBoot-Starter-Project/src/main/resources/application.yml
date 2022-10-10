@@ -1,0 +1,65 @@
+#Default
+#IDE에서 서버실행 시, Default 설정이 실행됨.
+#logging:
+#  level:
+#    io.honeyon.boot.springboot: DEBUG
+
+#list형식으로 임의의 properties 지정.
+my:
+  - servers: yohan0
+  - servers: yohan1
+
+example:
+  list:
+    - name: "my name"
+      description: "my description"
+    - name: "another name"
+      description: "another description"
+
+bar-name: "Yohan Bar"
+
+#구동 PORT 지정
+server:
+  port: 8080
+
+# ANSI 형식 지원 유무 지정.
+spring:
+  output:
+    ansi:
+      enabled: always
+  main:
+    allow-bean-definition-overriding: true
+---
+#Local Server
+spring:
+  profiles: local
+
+example:
+  list:
+    - name: "my another name"
+
+logging:
+  level:
+    io.honeyon.boot.springboot: TRACE
+
+---
+#Test Server
+spring:
+  profiles: test
+server:
+  port: ${random.int[8000,9000]}
+
+---
+#Dev Server
+spring:
+  profiles: dev
+
+---
+#Production Server
+spring:
+  profiles: prod
+logging:
+  level:
+    io.honeyon.boot.springboot: INFO
+server:
+  port: 5000

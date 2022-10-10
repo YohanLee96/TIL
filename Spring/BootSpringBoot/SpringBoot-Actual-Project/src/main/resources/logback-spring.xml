@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <logger name="org.springframework.web" level="DEBUG" />
+</configuration>
+
+<!--로그를 콘솔로 출력하지 않고, 파일로만 출력하게끔 하는 Setting-->
+<!--<configuration>-->
+<!--    <include resource="org/springframework/boot/logging/logback/defaults.xml" />-->
+<!--    <property name="LOG_FILE" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}/spring.log}"/>-->
+
+<!--    <include resource="org/springframework/boot/logging/logback/file-appender.xml" />-->
+
+<!--    <root level="INFO">-->
+<!--        <appender-ref ref="FILE" />-->
+<!--    </root>-->
+<!--</configuration>-->

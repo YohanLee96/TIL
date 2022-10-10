@@ -1,0 +1,1127 @@
+2020-07-21 11:04:05.269  INFO 4760 --- [main] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 11:04:05.315  INFO 4760 --- [main] com.boot.actual.ActualApplication        : Starting ActualApplication on DESKTOP-QCH7VPO with PID 4760 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 11:04:05.315  INFO 4760 --- [main] com.boot.actual.ActualApplication        : No active profile set, falling back to default profiles: default
+2020-07-21 11:04:06.117  INFO 4760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 11:04:06.123  INFO 4760 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-21 11:04:06.123  INFO 4760 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 11:04:06.193  INFO 4760 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-21 11:04:06.193  INFO 4760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 850 ms
+2020-07-21 11:04:06.411  INFO 4760 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 11:04:06.592  INFO 4760 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 11:04:06.623  INFO 4760 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 11:04:06.634  INFO 4760 --- [main] com.boot.actual.ActualApplication        : Started ActualApplication in 1.64 seconds (JVM running for 2.298)
+2020-07-21 11:04:06.985  INFO 4760 --- [RMI TCP Connection(2)-192.168.0.49] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 11:04:06.985  INFO 4760 --- [RMI TCP Connection(2)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-21 11:04:06.989  INFO 4760 --- [RMI TCP Connection(2)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-21 11:05:59.414  INFO 15092 --- [main] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 11:05:59.468  INFO 15092 --- [main] com.boot.actual.ActualApplication        : Starting ActualApplication on DESKTOP-QCH7VPO with PID 15092 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 11:05:59.469  INFO 15092 --- [main] com.boot.actual.ActualApplication        : No active profile set, falling back to default profiles: default
+2020-07-21 11:06:00.306  INFO 15092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 11:06:00.313  INFO 15092 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-21 11:06:00.313  INFO 15092 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 11:06:00.384  INFO 15092 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-21 11:06:00.385  INFO 15092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 882 ms
+2020-07-21 11:06:00.606  INFO 15092 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 11:06:00.613 DEBUG 15092 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-21 11:06:00.647 DEBUG 15092 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2020-07-21 11:06:00.662 DEBUG 15092 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-21 11:06:00.668 DEBUG 15092 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-21 11:06:00.799  INFO 15092 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 11:06:00.831  INFO 15092 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 11:06:00.842  INFO 15092 --- [main] com.boot.actual.ActualApplication        : Started ActualApplication in 1.737 seconds (JVM running for 2.405)
+2020-07-21 11:06:00.904  INFO 15092 --- [RMI TCP Connection(1)-192.168.0.49] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 11:06:00.905  INFO 15092 --- [RMI TCP Connection(1)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-21 11:06:00.905 DEBUG 15092 --- [RMI TCP Connection(1)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-07-21 11:06:00.909 DEBUG 15092 --- [RMI TCP Connection(1)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-21 11:06:00.909  INFO 15092 --- [RMI TCP Connection(1)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-21 11:28:18.374  INFO 14016 --- [main] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 11:28:18.422  INFO 14016 --- [main] com.boot.actual.ActualApplication        : Starting ActualApplication on DESKTOP-QCH7VPO with PID 14016 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 11:28:18.423  INFO 14016 --- [main] com.boot.actual.ActualApplication        : No active profile set, falling back to default profiles: default
+2020-07-21 11:28:19.235  INFO 14016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 11:28:19.242  INFO 14016 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-21 11:28:19.242  INFO 14016 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 11:28:19.314  INFO 14016 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-21 11:28:19.314  INFO 14016 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 861 ms
+2020-07-21 11:28:19.541  INFO 14016 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 11:28:19.548 DEBUG 14016 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-21 11:28:19.582 DEBUG 14016 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2020-07-21 11:28:19.597 DEBUG 14016 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-21 11:28:19.603 DEBUG 14016 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-21 11:28:19.727  INFO 14016 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 11:28:19.760  INFO 14016 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 11:28:19.771  INFO 14016 --- [main] com.boot.actual.ActualApplication        : Started ActualApplication in 1.67 seconds (JVM running for 2.376)
+2020-07-21 11:28:20.401  INFO 14016 --- [RMI TCP Connection(3)-192.168.0.49] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 11:28:20.401  INFO 14016 --- [RMI TCP Connection(3)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-21 11:28:20.401 DEBUG 14016 --- [RMI TCP Connection(3)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-07-21 11:28:20.405 DEBUG 14016 --- [RMI TCP Connection(3)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-21 11:28:20.405  INFO 14016 --- [RMI TCP Connection(3)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2020-07-21 11:29:12.647  INFO 16712 --- [main] o.s.boot.SpringApplication               : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 11:29:12.695  INFO 16712 --- [main] com.boot.actual.ActualApplication        : Starting ActualApplication on DESKTOP-QCH7VPO with PID 16712 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 11:29:12.696  INFO 16712 --- [main] com.boot.actual.ActualApplication        : No active profile set, falling back to default profiles: default
+2020-07-21 11:29:13.507  INFO 16712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 11:29:13.514  INFO 16712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-07-21 11:29:13.514  INFO 16712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 11:29:13.586  INFO 16712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-07-21 11:29:13.587  INFO 16712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 862 ms
+2020-07-21 11:29:13.799  INFO 16712 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 11:29:13.806 DEBUG 16712 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-07-21 11:29:13.840 DEBUG 16712 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2020-07-21 11:29:13.855 DEBUG 16712 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-07-21 11:29:13.861 DEBUG 16712 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-07-21 11:29:13.986  INFO 16712 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 11:29:14.018  INFO 16712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 11:29:14.029  INFO 16712 --- [main] com.boot.actual.ActualApplication        : Started ActualApplication in 1.667 seconds (JVM running for 2.334)
+2020-07-21 11:29:14.391  INFO 16712 --- [RMI TCP Connection(1)-192.168.0.49] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 11:29:14.392  INFO 16712 --- [RMI TCP Connection(1)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-07-21 11:29:14.392 DEBUG 16712 --- [RMI TCP Connection(1)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-07-21 11:29:14.395 DEBUG 16712 --- [RMI TCP Connection(1)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-07-21 11:29:14.395  INFO 16712 --- [RMI TCP Connection(1)-192.168.0.49] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-07-21 11:31:55.053  INFO 3836 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 11:31:55.129  INFO 3836 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 3836 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 11:31:55.132  INFO 3836 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 11:31:55.905  INFO 3836 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 11:31:55.912  INFO 3836 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 11:31:55.912  INFO 3836 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 11:31:55.991  INFO 3836 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 11:31:55.991  INFO 3836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 830 ms
+2020-07-21 11:31:56.197  INFO 3836 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 11:31:56.380  INFO 3836 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 11:31:56.451  INFO 3836 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 11:31:56.461  INFO 3836 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.677 seconds (JVM running for 2.576)
+2020-07-21 11:31:56.757  INFO 3836 --- [RMI TCP Connection(1)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 11:31:56.757  INFO 3836 --- [RMI TCP Connection(1)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-21 11:31:56.761  INFO 3836 --- [RMI TCP Connection(1)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-07-21 11:32:15.488  INFO 17800 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 11:32:15.565  INFO 17800 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 17800 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 11:32:15.568  INFO 17800 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 11:32:16.390  INFO 17800 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 11:32:16.396  INFO 17800 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 11:32:16.396  INFO 17800 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 11:32:16.466  INFO 17800 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 11:32:16.466  INFO 17800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 862 ms
+2020-07-21 11:32:16.674  INFO 17800 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 11:32:16.858  INFO 17800 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 11:32:16.931  INFO 17800 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 11:32:16.941  INFO 17800 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.717 seconds (JVM running for 2.528)
+2020-07-21 11:32:17.710  INFO 17800 --- [RMI TCP Connection(2)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 11:32:17.711  INFO 17800 --- [RMI TCP Connection(2)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-21 11:32:17.714  INFO 17800 --- [RMI TCP Connection(2)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2020-07-21 11:32:34.143  INFO 18920 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 11:32:34.222  INFO 18920 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 18920 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 11:32:34.224  INFO 18920 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 11:32:35.083  INFO 18920 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 11:32:35.090  INFO 18920 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 11:32:35.090  INFO 18920 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 11:32:35.171  INFO 18920 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 11:32:35.171  INFO 18920 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 913 ms
+2020-07-21 11:32:35.388  INFO 18920 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 11:32:35.578  INFO 18920 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 11:32:35.652  INFO 18920 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 11:32:35.662  INFO 18920 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.787 seconds (JVM running for 2.627)
+2020-07-21 11:32:36.382  INFO 18920 --- [RMI TCP Connection(5)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 11:32:36.383  INFO 18920 --- [RMI TCP Connection(5)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-21 11:32:36.386  INFO 18920 --- [RMI TCP Connection(5)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 3 ms
+2020-07-21 12:28:36.204  INFO 6688 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 12:28:36.280  INFO 6688 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 6688 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 12:28:36.282  INFO 6688 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 12:28:37.112  INFO 6688 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 12:28:37.119  INFO 6688 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 12:28:37.119  INFO 6688 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 12:28:37.198  INFO 6688 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 12:28:37.198  INFO 6688 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 885 ms
+2020-07-21 12:28:37.328  WARN 6688 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/boot/actual/config/JpaConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: No supported DataSource type found
+2020-07-21 12:28:37.331  INFO 6688 --- [main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-07-21 12:28:37.342  INFO 6688 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-21 12:28:37.350 ERROR 6688 --- [main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/boot/actual/config/JpaConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: No supported DataSource type found
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.boot.actual.ActualApplication.main(ActualApplication.java:19) [main/:?]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: No supported DataSource type found
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 19 more
+Caused by: java.lang.IllegalStateException: No supported DataSource type found
+	at org.springframework.boot.jdbc.DataSourceBuilder.getType(DataSourceBuilder.java:141) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.jdbc.DataSourceBuilder.build(DataSourceBuilder.java:72) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.boot.actual.config.JpaConfig.dataSource(JpaConfig.java:16) ~[main/:?]
+	at com.boot.actual.config.JpaConfig$$EnhancerBySpringCGLIB$$7af355df.CGLIB$dataSource$0(<generated>) ~[main/:?]
+	at com.boot.actual.config.JpaConfig$$EnhancerBySpringCGLIB$$7af355df$$FastClassBySpringCGLIB$$8d87eb50.invoke(<generated>) ~[main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at com.boot.actual.config.JpaConfig$$EnhancerBySpringCGLIB$$7af355df.dataSource(<generated>) ~[main/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 19 more
+
+2020-07-21 12:28:59.445  INFO 14176 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 12:28:59.531  INFO 14176 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 14176 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 12:28:59.533  INFO 14176 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 12:29:00.369  INFO 14176 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 12:29:00.376  INFO 14176 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 12:29:00.377  INFO 14176 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 12:29:00.456  INFO 14176 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 12:29:00.457  INFO 14176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 888 ms
+2020-07-21 12:29:00.588  WARN 14176 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/boot/actual/config/JpaConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: No supported DataSource type found
+2020-07-21 12:29:00.591  INFO 14176 --- [main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-07-21 12:29:00.602  INFO 14176 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-21 12:29:00.609 ERROR 14176 --- [main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/boot/actual/config/JpaConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: No supported DataSource type found
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.boot.actual.ActualApplication.main(ActualApplication.java:19) [main/:?]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: No supported DataSource type found
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 19 more
+Caused by: java.lang.IllegalStateException: No supported DataSource type found
+	at org.springframework.boot.jdbc.DataSourceBuilder.getType(DataSourceBuilder.java:141) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.jdbc.DataSourceBuilder.build(DataSourceBuilder.java:72) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.boot.actual.config.JpaConfig.dataSource(JpaConfig.java:16) ~[main/:?]
+	at com.boot.actual.config.JpaConfig$$EnhancerBySpringCGLIB$$5598447c.CGLIB$dataSource$0(<generated>) ~[main/:?]
+	at com.boot.actual.config.JpaConfig$$EnhancerBySpringCGLIB$$5598447c$$FastClassBySpringCGLIB$$59af4662.invoke(<generated>) ~[main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at com.boot.actual.config.JpaConfig$$EnhancerBySpringCGLIB$$5598447c.dataSource(<generated>) ~[main/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 19 more
+
+2020-07-21 12:29:41.289  INFO 10060 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 12:29:41.362  INFO 10060 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 10060 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 12:29:41.364  INFO 10060 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 12:29:42.151  INFO 10060 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 12:29:42.158  INFO 10060 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 12:29:42.158  INFO 10060 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 12:29:42.236  INFO 10060 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 12:29:42.237  INFO 10060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 844 ms
+2020-07-21 12:29:42.366  WARN 10060 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/boot/actual/config/JpaConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: No supported DataSource type found
+2020-07-21 12:29:42.369  INFO 10060 --- [main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2020-07-21 12:29:42.380  INFO 10060 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-07-21 12:29:42.386 ERROR 10060 --- [main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/boot/actual/config/JpaConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: No supported DataSource type found
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:893) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.boot.actual.ActualApplication.main(ActualApplication.java:19) [main/:?]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: No supported DataSource type found
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 19 more
+Caused by: java.lang.IllegalStateException: No supported DataSource type found
+	at org.springframework.boot.jdbc.DataSourceBuilder.getType(DataSourceBuilder.java:141) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.jdbc.DataSourceBuilder.build(DataSourceBuilder.java:72) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.boot.actual.config.JpaConfig.dataSource(JpaConfig.java:16) ~[main/:?]
+	at com.boot.actual.config.JpaConfig$$EnhancerBySpringCGLIB$$328e175c.CGLIB$dataSource$0(<generated>) ~[main/:?]
+	at com.boot.actual.config.JpaConfig$$EnhancerBySpringCGLIB$$328e175c$$FastClassBySpringCGLIB$$ebfe31d7.invoke(<generated>) ~[main/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at com.boot.actual.config.JpaConfig$$EnhancerBySpringCGLIB$$328e175c.dataSource(<generated>) ~[main/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 19 more
+
+2020-07-21 12:31:02.925  INFO 18092 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 12:31:03.001  INFO 18092 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 18092 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 12:31:03.005  INFO 18092 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 12:31:03.933  INFO 18092 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 12:31:03.940  INFO 18092 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 12:31:03.940  INFO 18092 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 12:31:04.017  INFO 18092 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 12:31:04.017  INFO 18092 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 983 ms
+2020-07-21 12:31:04.287  INFO 18092 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 12:31:04.569  INFO 18092 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 12:31:04.605  INFO 18092 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 12:31:04.616  INFO 18092 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.98 seconds (JVM running for 2.819)
+2020-07-21 12:31:04.985  INFO 18092 --- [RMI TCP Connection(3)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 12:31:04.986  INFO 18092 --- [RMI TCP Connection(3)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-21 12:31:04.990  INFO 18092 --- [RMI TCP Connection(3)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-07-21 12:31:05.503 ERROR 18092 --- [RMI TCP Connection(5)-192.168.0.49] c.z.h.HikariConfig                       : HikariPool-1 - dataSource or dataSourceClassName or jdbcUrl is required.
+2020-07-21 12:31:05.503  WARN 18092 --- [RMI TCP Connection(5)-192.168.0.49] o.s.b.a.j.DataSourceHealthIndicator      : DataSource health check failed
+
+java.lang.IllegalArgumentException: dataSource or dataSourceClassName or jdbcUrl is required.
+	at com.zaxxer.hikari.HikariConfig.validate(HikariConfig.java:1004) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:109) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.getProduct(DataSourceHealthIndicator.java:122) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doDataSourceHealthCheck(DataSourceHealthIndicator.java:105) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doHealthCheck(DataSourceHealthIndicator.java:100) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:71) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:39) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:65) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:55) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:121) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:96) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819) ~[?:1.8.0_241]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[?:1.8.0_241]
+	at sun.reflect.GeneratedMethodAccessor47.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[?:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) ~[?:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) [?:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_241]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
+
+2020-07-21 12:31:41.838  INFO 11904 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 12:31:41.917  INFO 11904 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 11904 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 12:31:41.920  INFO 11904 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 12:31:42.796  INFO 11904 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 12:31:42.802  INFO 11904 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 12:31:42.802  INFO 11904 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 12:31:42.876  INFO 11904 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 12:31:42.876  INFO 11904 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 928 ms
+2020-07-21 12:31:43.169  INFO 11904 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 12:31:43.442  INFO 11904 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 12:31:43.478  INFO 11904 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 12:31:43.489  INFO 11904 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.919 seconds (JVM running for 2.764)
+2020-07-21 12:31:43.935  INFO 11904 --- [RMI TCP Connection(1)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 12:31:43.936  INFO 11904 --- [RMI TCP Connection(1)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-21 12:31:43.937  INFO 11904 --- [RMI TCP Connection(2)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-21 12:31:43.940  INFO 11904 --- [RMI TCP Connection(1)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-07-21 12:31:43.939  WARN 11904 --- [RMI TCP Connection(2)-192.168.0.49] o.s.b.a.j.DataSourceHealthIndicator      : DataSource health check failed
+
+java.lang.RuntimeException: Failed to get driver instance for jdbcUrl=jdbc:h2:tcp://localhost/~/test
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:114) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:325) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:114) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:108) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.getProduct(DataSourceHealthIndicator.java:122) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doDataSourceHealthCheck(DataSourceHealthIndicator.java:105) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doHealthCheck(DataSourceHealthIndicator.java:100) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:71) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:39) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:65) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:55) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:121) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:96) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819) ~[?:1.8.0_241]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[?:1.8.0_241]
+	at sun.reflect.GeneratedMethodAccessor47.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[?:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) ~[?:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) [?:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_241]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:315) ~[?:1.8.0_241]
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:106) ~[HikariCP-3.4.5.jar:?]
+	... 54 more
+
+2020-07-21 12:34:49.035  INFO 5928 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 12:34:49.107  INFO 5928 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 5928 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 12:34:49.110  INFO 5928 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 12:34:50.003  INFO 5928 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 12:34:50.010  INFO 5928 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 12:34:50.010  INFO 5928 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 12:34:50.084  INFO 5928 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 12:34:50.084  INFO 5928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 946 ms
+2020-07-21 12:34:50.348  INFO 5928 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 12:34:50.605  INFO 5928 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 12:34:50.641  INFO 5928 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 12:34:50.651  INFO 5928 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.901 seconds (JVM running for 2.893)
+2020-07-21 12:34:50.991  INFO 5928 --- [RMI TCP Connection(2)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 12:34:50.991  INFO 5928 --- [RMI TCP Connection(2)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-21 12:34:50.992  INFO 5928 --- [RMI TCP Connection(1)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-21 12:34:50.995  INFO 5928 --- [RMI TCP Connection(2)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-07-21 12:34:50.994  WARN 5928 --- [RMI TCP Connection(1)-192.168.0.49] o.s.b.a.j.DataSourceHealthIndicator      : DataSource health check failed
+
+java.lang.RuntimeException: Failed to get driver instance for jdbcUrl=jdbc:h2:tcp://localhost/~/test
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:114) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:325) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:114) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:108) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.getProduct(DataSourceHealthIndicator.java:122) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doDataSourceHealthCheck(DataSourceHealthIndicator.java:105) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doHealthCheck(DataSourceHealthIndicator.java:100) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:71) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:39) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:65) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:55) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:121) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:96) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819) ~[?:1.8.0_241]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[?:1.8.0_241]
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[?:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) ~[?:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) [?:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_241]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:315) ~[?:1.8.0_241]
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:106) ~[HikariCP-3.4.5.jar:?]
+	... 54 more
+
+2020-07-21 12:35:09.854  INFO 1840 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 12:35:09.934  INFO 1840 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 1840 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 12:35:09.937  INFO 1840 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 12:35:10.851  INFO 1840 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 12:35:10.857  INFO 1840 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 12:35:10.857  INFO 1840 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 12:35:10.931  INFO 1840 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 12:35:10.931  INFO 1840 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 958 ms
+2020-07-21 12:35:11.209  INFO 1840 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 12:35:11.467  INFO 1840 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 12:35:11.503  INFO 1840 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 12:35:11.514  INFO 1840 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.938 seconds (JVM running for 2.789)
+2020-07-21 12:35:11.755  INFO 1840 --- [RMI TCP Connection(3)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-21 12:35:11.801  INFO 1840 --- [RMI TCP Connection(3)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-21 12:35:12.276  INFO 1840 --- [RMI TCP Connection(5)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 12:35:12.276  INFO 1840 --- [RMI TCP Connection(5)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-21 12:35:12.280  INFO 1840 --- [RMI TCP Connection(5)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-07-21 12:36:08.007  INFO 8760 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 12:36:08.086  INFO 8760 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 8760 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 12:36:08.089  INFO 8760 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 12:36:08.989  INFO 8760 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 12:36:08.995  INFO 8760 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 12:36:08.996  INFO 8760 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 12:36:09.069  INFO 8760 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 12:36:09.070  INFO 8760 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 950 ms
+2020-07-21 12:36:09.325  INFO 8760 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 12:36:09.588  INFO 8760 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 12:36:09.622  INFO 8760 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 12:36:09.633  INFO 8760 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.917 seconds (JVM running for 2.79)
+2020-07-21 12:36:10.124  INFO 8760 --- [RMI TCP Connection(1)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 12:36:10.125  INFO 8760 --- [RMI TCP Connection(1)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-21 12:36:10.127  INFO 8760 --- [RMI TCP Connection(2)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-21 12:36:10.129  INFO 8760 --- [RMI TCP Connection(1)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-07-21 12:36:10.173  INFO 8760 --- [RMI TCP Connection(2)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-21 12:37:35.199  INFO 14912 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-21 12:37:35.272  INFO 14912 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 14912 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-21 12:37:35.275  INFO 14912 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-21 12:37:36.169  INFO 14912 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-21 12:37:36.175  INFO 14912 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-21 12:37:36.175  INFO 14912 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-21 12:37:36.249  INFO 14912 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-21 12:37:36.249  INFO 14912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 944 ms
+2020-07-21 12:37:36.515  INFO 14912 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-21 12:37:36.778  INFO 14912 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-21 12:37:36.813  INFO 14912 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-21 12:37:36.823  INFO 14912 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.89 seconds (JVM running for 2.724)
+2020-07-21 12:37:37.304  INFO 14912 --- [RMI TCP Connection(2)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-21 12:37:37.304  INFO 14912 --- [RMI TCP Connection(2)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-21 12:37:37.307  INFO 14912 --- [RMI TCP Connection(1)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-21 12:37:37.309  INFO 14912 --- [RMI TCP Connection(2)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-07-21 12:37:37.351  INFO 14912 --- [RMI TCP Connection(1)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-22 10:36:14.291  INFO 15292 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-22 10:36:14.375  INFO 15292 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 15292 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-22 10:36:14.378  INFO 15292 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-22 10:36:15.393  INFO 15292 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-22 10:36:15.401  INFO 15292 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-22 10:36:15.402  INFO 15292 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-22 10:36:15.487  INFO 15292 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-22 10:36:15.487  INFO 15292 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1076 ms
+2020-07-22 10:36:15.763  INFO 15292 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-22 10:36:16.046  INFO 15292 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-22 10:36:16.082  INFO 15292 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-22 10:36:16.092  INFO 15292 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 2.12 seconds (JVM running for 3.175)
+2020-07-22 10:36:16.435  INFO 15292 --- [RMI TCP Connection(1)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-22 10:36:16.435  INFO 15292 --- [RMI TCP Connection(1)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-22 10:36:16.437  INFO 15292 --- [RMI TCP Connection(2)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-22 10:36:16.439  INFO 15292 --- [RMI TCP Connection(1)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-07-22 10:36:19.486 ERROR 15292 --- [RMI TCP Connection(2)-192.168.0.49] c.z.h.p.HikariPool                       : HikariPool-1 - Exception during pool initialization.
+
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Connection is broken: "java.net.SocketTimeoutException: connect timed out: localhost" [90067-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:439) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:321) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.getProduct(DataSourceHealthIndicator.java:122) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doDataSourceHealthCheck(DataSourceHealthIndicator.java:105) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doHealthCheck(DataSourceHealthIndicator.java:100) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:71) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:39) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:65) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:55) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:121) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:96) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819) ~[?:1.8.0_241]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[?:1.8.0_241]
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[?:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) ~[?:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) [?:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_241]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_241]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_241]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_241]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_241]
+	at java.net.Socket.connect(Socket.java:606) ~[?:1.8.0_241]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:103) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:83) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:119) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:435) ~[h2-1.4.200.jar:1.4.200]
+	... 61 more
+
+2020-07-22 10:36:19.492  WARN 15292 --- [RMI TCP Connection(2)-192.168.0.49] o.s.b.a.j.DataSourceHealthIndicator      : DataSource health check failed
+
+org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is org.h2.jdbc.JdbcSQLNonTransientConnectionException: Connection is broken: "java.net.SocketTimeoutException: connect timed out: localhost" [90067-200]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:82) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:324) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.getProduct(DataSourceHealthIndicator.java:122) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doDataSourceHealthCheck(DataSourceHealthIndicator.java:105) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.jdbc.DataSourceHealthIndicator.doHealthCheck(DataSourceHealthIndicator.java:100) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:71) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:39) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:65) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:55) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282) ~[spring-core-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:121) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:96) ~[spring-boot-actuator-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819) ~[?:1.8.0_241]
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401) ~[?:1.8.0_241]
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[?:1.8.0_241]
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_241]
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:357) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Transport.java:200) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport$1.run(Transport.java:197) ~[?:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:573) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:834) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:688) ~[?:1.8.0_241]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_241]
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:687) [?:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_241]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_241]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_241]
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Connection is broken: "java.net.SocketTimeoutException: connect timed out: localhost" [90067-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:622) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.message.DbException.get(DbException.java:194) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:439) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:321) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 47 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_241]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_241]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_241]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_241]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_241]
+	at java.net.Socket.connect(Socket.java:606) ~[?:1.8.0_241]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:103) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:83) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:119) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:435) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:321) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152) ~[h2-1.4.200.jar:1.4.200]
+	at org.h2.Driver.connect(Driver.java:69) ~[h2-1.4.200.jar:1.4.200]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-3.4.5.jar:?]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79) ~[spring-jdbc-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	... 47 more
+
+2020-07-22 10:39:53.882  INFO 1264 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-22 10:39:53.956  INFO 1264 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 1264 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-22 10:39:53.959  INFO 1264 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-22 10:39:54.842  INFO 1264 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-22 10:39:54.849  INFO 1264 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-22 10:39:54.849  INFO 1264 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-22 10:39:54.923  INFO 1264 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-22 10:39:54.923  INFO 1264 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 935 ms
+2020-07-22 10:39:55.240  INFO 1264 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-22 10:39:55.516  INFO 1264 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-22 10:39:55.551  INFO 1264 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-22 10:39:55.563  INFO 1264 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.949 seconds (JVM running for 2.837)
+2020-07-22 10:39:56.463  INFO 1264 --- [RMI TCP Connection(3)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-22 10:39:56.463  INFO 1264 --- [RMI TCP Connection(3)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-22 10:39:56.465  INFO 1264 --- [RMI TCP Connection(4)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-22 10:39:56.467  INFO 1264 --- [RMI TCP Connection(3)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-07-22 10:39:56.500  INFO 1264 --- [RMI TCP Connection(4)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-22 10:41:13.281  INFO 1264 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/]
+2020-07-22 10:41:13.281  INFO 1264 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:13.366  INFO 1264 --- [http-nio-8080-exec-2] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:41:13.366  INFO 1264 --- [http-nio-8080-exec-2] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:15.559  INFO 1264 --- [http-nio-8080-exec-3] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/awd]
+2020-07-22 10:41:15.560  INFO 1264 --- [http-nio-8080-exec-3] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:15.604  INFO 1264 --- [http-nio-8080-exec-4] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:41:15.604  INFO 1264 --- [http-nio-8080-exec-4] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:17.910  INFO 1264 --- [http-nio-8080-exec-5] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/awdwgwerge]
+2020-07-22 10:41:17.910  INFO 1264 --- [http-nio-8080-exec-5] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:17.954  INFO 1264 --- [http-nio-8080-exec-6] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:41:17.954  INFO 1264 --- [http-nio-8080-exec-6] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:21.061  INFO 1264 --- [http-nio-8080-exec-7] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/awdwgwerge/eghegrgerg]
+2020-07-22 10:41:21.061  INFO 1264 --- [http-nio-8080-exec-7] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:21.109  INFO 1264 --- [http-nio-8080-exec-9] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:41:21.109  INFO 1264 --- [http-nio-8080-exec-9] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:23.694  INFO 1264 --- [http-nio-8080-exec-8] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/awdwgwerge/eghegrgergegherherh]
+2020-07-22 10:41:23.694  INFO 1264 --- [http-nio-8080-exec-8] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:23.757  INFO 1264 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:41:23.757  INFO 1264 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:27.344  INFO 1264 --- [http-nio-8080-exec-2] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080//]
+2020-07-22 10:41:27.344  INFO 1264 --- [http-nio-8080-exec-2] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:27.393  INFO 1264 --- [http-nio-8080-exec-3] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:41:27.393  INFO 1264 --- [http-nio-8080-exec-3] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:29.182  INFO 1264 --- [http-nio-8080-exec-4] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080//1]
+2020-07-22 10:41:29.183  INFO 1264 --- [http-nio-8080-exec-4] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:29.225  INFO 1264 --- [http-nio-8080-exec-5] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:41:29.225  INFO 1264 --- [http-nio-8080-exec-5] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:31.823  INFO 1264 --- [http-nio-8080-exec-6] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/hello/2]
+2020-07-22 10:41:31.823  INFO 1264 --- [http-nio-8080-exec-6] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:31.920  INFO 1264 --- [http-nio-8080-exec-7] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:41:31.920  INFO 1264 --- [http-nio-8080-exec-7] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:33.566  INFO 1264 --- [http-nio-8080-exec-9] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/hello/23]
+2020-07-22 10:41:33.567  INFO 1264 --- [http-nio-8080-exec-9] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:33.609  INFO 1264 --- [http-nio-8080-exec-10] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:41:33.610  INFO 1264 --- [http-nio-8080-exec-10] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:39.249  INFO 1264 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/rtjhitjrtiohjroithorijoijhoitgjnoergneoruigjneoig]
+2020-07-22 10:41:39.249  INFO 1264 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:41:39.333  INFO 1264 --- [http-nio-8080-exec-2] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:41:39.334  INFO 1264 --- [http-nio-8080-exec-2] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:42:02.927  INFO 1264 --- [http-nio-8080-exec-4] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/act/wefew]
+2020-07-22 10:42:02.927  INFO 1264 --- [http-nio-8080-exec-4] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:42:02.990  INFO 1264 --- [http-nio-8080-exec-5] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:42:02.990  INFO 1264 --- [http-nio-8080-exec-5] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:42:05.886  INFO 1264 --- [http-nio-8080-exec-6] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/act]
+2020-07-22 10:42:05.886  INFO 1264 --- [http-nio-8080-exec-6] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:42:05.929  INFO 1264 --- [http-nio-8080-exec-7] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:42:05.929  INFO 1264 --- [http-nio-8080-exec-7] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:44:01.871  INFO 1264 --- [http-nio-8080-exec-8] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/tyukyukyukytuk]
+2020-07-22 10:44:01.872  INFO 1264 --- [http-nio-8080-exec-8] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:44:01.940  INFO 1264 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:44:01.941  INFO 1264 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:44:48.342  INFO 16984 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-22 10:44:48.418  INFO 16984 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 16984 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-22 10:44:48.420  INFO 16984 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-22 10:44:49.333  INFO 16984 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-22 10:44:49.340  INFO 16984 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-22 10:44:49.340  INFO 16984 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-22 10:44:49.413  INFO 16984 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-22 10:44:49.414  INFO 16984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 964 ms
+2020-07-22 10:44:49.687  INFO 16984 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-22 10:44:49.955  INFO 16984 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-22 10:44:49.991  INFO 16984 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-22 10:44:50.003  INFO 16984 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.949 seconds (JVM running for 2.946)
+2020-07-22 10:44:50.387  INFO 16984 --- [RMI TCP Connection(2)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-22 10:44:50.387  INFO 16984 --- [RMI TCP Connection(2)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-22 10:44:50.389  INFO 16984 --- [RMI TCP Connection(1)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-22 10:44:50.392  INFO 16984 --- [RMI TCP Connection(2)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-07-22 10:44:50.428  INFO 16984 --- [RMI TCP Connection(1)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-22 10:44:52.087  INFO 16984 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/hello]
+2020-07-22 10:44:52.088  INFO 16984 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:44:52.167  INFO 16984 --- [http-nio-8080-exec-2] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:44:52.168  INFO 16984 --- [http-nio-8080-exec-2] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:47:14.991  INFO 8924 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-22 10:47:15.064  INFO 8924 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 8924 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-22 10:47:15.066  INFO 8924 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-22 10:47:15.981  INFO 8924 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2020-07-22 10:47:15.988  INFO 8924 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2020-07-22 10:47:15.988  INFO 8924 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-22 10:47:16.070  INFO 8924 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2020-07-22 10:47:16.070  INFO 8924 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 975 ms
+2020-07-22 10:47:16.333  INFO 8924 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-22 10:47:16.598  INFO 8924 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/act'
+2020-07-22 10:47:16.632  INFO 8924 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2020-07-22 10:47:16.644  INFO 8924 --- [main] c.b.a.ActualApplication                  : Started ActualApplication in 1.913 seconds (JVM running for 2.754)
+2020-07-22 10:47:17.172  INFO 8924 --- [RMI TCP Connection(3)-192.168.0.49] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-22 10:47:17.172  INFO 8924 --- [RMI TCP Connection(3)-192.168.0.49] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2020-07-22 10:47:17.176  INFO 8924 --- [RMI TCP Connection(3)-192.168.0.49] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms
+2020-07-22 10:47:17.741  INFO 8924 --- [RMI TCP Connection(5)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2020-07-22 10:47:17.774  INFO 8924 --- [RMI TCP Connection(5)-192.168.0.49] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2020-07-22 10:47:35.911  INFO 8924 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/hello]
+2020-07-22 10:47:35.911  INFO 8924 --- [http-nio-8080-exec-1] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:47:36.014  INFO 8924 --- [http-nio-8080-exec-2] c.b.a.r.actualHttpTraceRepository        : Request URI: [http://localhost:8080/favicon.ico]
+2020-07-22 10:47:36.014  INFO 8924 --- [http-nio-8080-exec-2] c.b.a.r.actualHttpTraceRepository        : Response Headers: [{}]
+2020-07-22 10:52:24.419  INFO 3304 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-22 10:52:24.491  INFO 3304 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 3304 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-22 10:52:24.493  INFO 3304 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-22 10:52:24.604  WARN 3304 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2020-07-22 10:52:24.616 ERROR 3304 --- [main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.boot.actual.ActualApplication.main(ActualApplication.java:18) [main/:?]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:205) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:177) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	... 8 more
+
+2020-07-22 10:52:39.068  INFO 14104 --- [main] o.s.b.SpringApplication                  : 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m      [2m (v2.3.1.RELEASE)[0;39m
+
+
+2020-07-22 10:52:39.143  INFO 14104 --- [main] c.b.a.ActualApplication                  : Starting ActualApplication on DESKTOP-QCH7VPO with PID 14104 (C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project\build\classes\java\main started by swj03 in C:\0_myGit\SpringBoot Study\Boot-Spring-Boot\SpringBoot-Actual-Project)
+2020-07-22 10:52:39.145  INFO 14104 --- [main] c.b.a.ActualApplication                  : No active profile set, falling back to default profiles: default
+2020-07-22 10:52:39.208  WARN 14104 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2020-07-22 10:52:39.220 ERROR 14104 --- [main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:161) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) ~[spring-context-5.2.7.RELEASE.jar:5.2.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:140) [spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at com.boot.actual.ActualApplication.main(ActualApplication.java:18) [main/:?]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:205) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:177) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:158) ~[spring-boot-2.3.1.RELEASE.jar:2.3.1.RELEASE]
+	... 8 more
+

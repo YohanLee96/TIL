@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p v-bind:id="uuid" v-bind:class="name" >{{num}}</p>
+        {{doubleNum}}
+        <!-- <div v-if="loading">
+            Loading....
+        </div>
+        <div v-else>
+            Login Success!!
+        </div> -->
+        <div v-show="loading">
+            Loading.....
+        </div>
+        <input v-model="name" type="text">
+        <p>Message is {{name}}</p>
+    </div>
+    <script>
+        new Vue({
+            el : '#app',
+            data : {
+                num : 10,
+                uuid : "agj2234",
+                name : "",
+                loading : true
+            },
+            computed : {
+                doubleNum : function(){
+                    return this.num * 2
+                }
+            }
+        });
+    </script>
+</body>
+</html>

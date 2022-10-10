@@ -1,0 +1,53 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+}
+
+group = 'com.boot'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+
+    compile.exclude module : 'spring-boot-starter-logging' //log4j2를 사용하기 위해 스프링부트에서 기존 logback 제외.
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+ //   compile 'org.springframework.boot:spring-boot-starter-jetty'
+
+    //XML 랜더링을 위한 의존성
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml")
+    //JDK에서 제공하는 기본 구현체보다 빠르고 출력을 꾸밀 수 있는 의존성
+    implementation group: 'com.fasterxml.woodstox', name: 'woodstox-core', version: '5.0.1'
+
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+
+    //Spring Boot Default Setting
+    implementation ('org.springframework.boot:spring-boot-starter'){  //log4j2를 사용하기 위해 스타터에서기존 logback 제외.
+        exclude module : "spring-boot-starter-logging"
+    }
+    implementation ('org.springframework.boot:spring-boot-starter-web')
+    implementation('org.springframework.boot:spring-boot-starter-jdbc')
+    implementation('com.h2database:h2')
+
+    implementation("org.springframework.boot:spring-boot-starter-log4j2")
+
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
