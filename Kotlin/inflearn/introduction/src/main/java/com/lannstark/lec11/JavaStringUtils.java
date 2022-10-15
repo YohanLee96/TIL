@@ -1,8 +1,8 @@
 package com.lannstark.lec11;
 
-public abstract class StringUtils {
+public abstract class JavaStringUtils {
 
-  private StringUtils() {}
+  private JavaStringUtils() {}
 
   public boolean isDirectoryPath(String path) {
     return path.endsWith("/");
