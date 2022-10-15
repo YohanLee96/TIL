@@ -6,4 +6,5 @@ public interface JavaFlyable {
     System.out.println("파닥 파닥");
   }
 
+
 }
