@@ -1,12 +1,12 @@
 package com.lannstark.lec16;
 
-public class Person {
+public class JavaPerson {
 
   private final String firstName;
   private final String lastName;
   private int age;
 
-  public Person(String firstName, String lastName, int age) {
+  public JavaPerson(String firstName, String lastName, int age) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
