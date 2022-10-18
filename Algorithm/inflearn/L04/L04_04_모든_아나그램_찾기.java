@@ -1,5 +1,8 @@
 package inflearn.L04;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
 
 /**
@@ -17,8 +20,41 @@ public class L04_04_모든_아나그램_찾기 {
 
     public int solution(String s, String t) {
         int result = 0;
+
+
+        Map<Character, Integer> anagram = new HashMap<>();
+        for (char c : t.toCharArray()) { //아나그램 체크 해시 생성
+            anagram.put(c, anagram.getOrDefault(c, 0) + 1);
+        }
+
+        //Sliding Window 처리를 위해 t-1 만큼의 put.
+        Map<Character, Integer> checkHash = new HashMap<>();
+        for (int i = 0; i < t.length() -1; i++) {
+            increase(checkHash, s.charAt(i));
+        }
+        for (int i = t.length() -1; i < s.length(); i++) {
+            increase(checkHash, s.charAt(i));
+            if(checkHash.equals(anagram)) {
+                result++;
+            }
+            decrease(checkHash, s.charAt(i - (t.length() -1)));
+        }
+
         return result;
     }
+
+    private void increase(Map<Character, Integer> checkHash, char c) {
+        checkHash.put(c, checkHash.getOrDefault(c, 0) + 1);
+    }
+
+    private void decrease(Map<Character, Integer> checkHash, char c) {
+        if(checkHash.get(c) == 1) {
+            checkHash.remove(c);
+        } else {
+            checkHash.put(c, checkHash.get(c) -1);
+        }
+    }
+
 
     public static void main(String[] args) {
         L04_04_모든_아나그램_찾기 program = new L04_04_모든_아나그램_찾기();
