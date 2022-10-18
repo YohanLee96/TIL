@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import org.jetbrains.annotations.NotNull;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
@@ -41,4 +42,13 @@ public class UserLoanHistory {
     this.isReturn = true;
   }
 
+
+  @NotNull
+  public User getUser() {
+    return user;
+  }
+
+  public boolean isReturn() {
+    return isReturn;
+  }
 }
