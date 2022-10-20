@@ -46,16 +46,13 @@ class UserServiceTest @Autowired constructor(
     @Test
     fun getUsersTest() {
         //given
-        userRepository.saveAll(listOf(
-            User("A", 20),
-            User("B", null)
-        ))
+        userRepository.saveAll(listOf(User("A", 20), User("B", null)))
         //when
         val results = userService.getUsers()
 
         //then
         assertThat(results).hasSize(2)
-        assertThat(results) // [User, User]
+        assertThat(results) // [JavaUser, JavaUser]
             .extracting("name") //name필드만 추출. [A, B]
             .containsExactlyInAnyOrder("A", "B") // A 또는 B인지 체크
 
@@ -68,7 +65,7 @@ class UserServiceTest @Autowired constructor(
     fun updateUserNameTest() {
         //given
         val savedUser = userRepository.save(User("A", null))
-        val request = UserUpdateRequest(savedUser.id, "B")
+        val request = UserUpdateRequest(savedUser.id!!, "B")
         //when
         userService.updateUserName(request)
 

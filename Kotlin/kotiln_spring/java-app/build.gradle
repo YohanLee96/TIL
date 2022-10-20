@@ -3,6 +3,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
     id 'org.jetbrains.kotlin.jvm' version '1.6.21'
+    id 'org.jetbrains.kotlin.plugin.jpa' version '1.6.21' //JPA용 코틀린 플러그인. 코틀린으로 엔티티 작성 시, 버그 대응.
 }
 
 group = 'com.group'
@@ -16,7 +17,8 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8' //필수
+    implementation 'org.jetbrains.kotlin:kotlin-reflect' //NoClassDefFoundError: kotlin/reflect/full/KClasses 대응.
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
