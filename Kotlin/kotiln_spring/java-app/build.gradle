@@ -5,6 +5,7 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.6.21'
     id 'org.jetbrains.kotlin.plugin.jpa' version '1.6.21' //JPA용 코틀린 플러그인. 코틀린으로 엔티티 작성 시, 버그 대응.
     id 'org.jetbrains.kotlin.plugin.spring' version '1.6.21' //public Method를 자동으로 열어줌. open키워드를 안써도됨.
+    id 'org.jetbrains.kotlin.kapt' version '1.6.21' //QueryDSL 적용 시, 필요한 플러그인. 자바 어노테이션 처리를 위함.
 }
 
 group = 'com.group'
@@ -21,6 +22,11 @@ dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8' //필수
     implementation 'org.jetbrains.kotlin:kotlin-reflect' //NoClassDefFoundError: kotlin/reflect/full/KClasses 대응.
     implementation 'com.fasterxml.jackson.module:jackson-module-kotlin' //JSON 파싱 에러 대응.
+    implementation 'com.querydsl:querydsl-jpa:5.0.0' //QueryDSL 의존성
+    kapt("com.querydsl:querydsl-apt:5.0.0:jpa") //QueryDSL 의존성
+    kapt("org.springframework.boot:spring-boot-configuration-processor") //QueryDSL 의존성
+
+
     runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
