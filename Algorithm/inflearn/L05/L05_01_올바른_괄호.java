@@ -1,6 +1,7 @@
 package inflearn.L05;
 
 import java.util.Scanner;
+import java.util.Stack;
 
 /**
  * Created by Yohan lee Created on 2022/10/21.
@@ -15,10 +16,29 @@ import java.util.Scanner;
  **/
 public class L05_01_올바른_괄호 {
 
-    public String solution(String s) {
-        String result = "YES";
+    /**
+     * push() : 스택에 추가.
+     * pop() : 스택에 맨위에 있는 개체를 가져오고 제거합니다.
+     * peek() : 스택에 맨위에 있는 개체를 가져오기만 합니다.
+     */
 
-        return result;
+    public String solution(String s) {
+        Stack<Character> stack = new Stack<>();
+        for (char c : s.toCharArray()) {
+            if (c == '(') {
+                stack.push(c);
+            } else {
+                if(stack.isEmpty()) { // 없을 경우, 짝이 맞지않음.
+                    return "NO";
+                }
+                stack.pop();
+            }
+        }
+        if(!stack.isEmpty()) {
+            return "NO";
+        }
+
+        return "YES";
     }
 
     public static void main(String[] args) {
