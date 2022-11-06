@@ -32,24 +32,14 @@ public class L05_05_쇠막대기 {
     public int solution(String str) {
         int result = 0;
         Stack<Character> stack = new Stack<>();
-        for (char c : str.toCharArray()) {
+        for (int i = 0; i<str.length(); i++) {
+            char c = str.charAt(i);
             if(c == ')') {
-                if(stack.lastElement() == '(') { //레이저 발사!
-                    stack.pop();
-                    for (int i = stack.size() -1; 0 <= i; i--) {
-                        if (stack.get(i) == '(') {
-                            result++;
-                        }
-                    }
-                    stack.push('0');
-                } else { //쇠막대기 끝일 경우,
-                    for (int i = stack.size() -1; 0 <= i; i--) {
-                        if (stack.get(i) == '(') {
-                            result++;
-                            stack.remove(i);
-                            break;
-                        }
-                    }
+                stack.pop();
+                if(str.charAt(i -1) == '(') {
+                    result += stack.size();
+                } else {
+                    result++;
                 }
             } else {
                 stack.push(c);
