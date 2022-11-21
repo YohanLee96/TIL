@@ -17,6 +17,7 @@ import java.util.Scanner;
 public class L06_03_삽입정렬 {
 
     public int[] solution(int n, int[] arr) {
+
         return arr;
     }
 
