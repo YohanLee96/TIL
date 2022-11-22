@@ -17,7 +17,16 @@ import java.util.Scanner;
 public class L06_03_삽입정렬 {
 
     public int[] solution(int n, int[] arr) {
+        for (int i = 1; i < n; i++) {
+            int tmp = arr[i], j;
+            for (j = i-1; 0 <= j; j--) {
+                if(tmp < arr[j]) {
+                    arr[j+1] = arr[j];
+                } else break;
+            }
 
+            arr[j+1] = tmp;
+        }
         return arr;
     }
 
