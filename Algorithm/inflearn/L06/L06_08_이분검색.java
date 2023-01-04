@@ -1,5 +1,6 @@
 package inflearn.L06;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -19,6 +20,20 @@ public class L06_08_이분검색 {
 
     public int solution(int n, int m, int[] arr) {
         int result = 0;
+        Arrays.sort(arr);
+        int low = 0;
+        int high = n-1;
+        while (low <= high) {
+            int mid = (low+high)/2;
+            if(arr[mid] < m) {
+                low = mid +1;
+            } else if(m < arr[mid]) {
+                high = mid -1;
+            } else {
+                result = mid+1;
+                break;
+            }
+        }
         return result;
     }
 
