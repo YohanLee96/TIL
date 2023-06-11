@@ -1,6 +1,8 @@
 //runApp()에 대한 의존성
 import 'package:flutter/material.dart';
 
+import 'gradient_container.dart';
+
 void main() {
   /**
    * 앱을 실행하는 메인 함수
@@ -10,25 +12,14 @@ void main() {
    *
    */
   runApp(
-    MaterialApp(
+    const MaterialApp(
       //const를 붙힐려면 하위 위젯들의 생성자가 const 생성자이어야 한다.
       home: Scaffold(
         backgroundColor: Color.fromARGB(255, 47, 5, 120),
         // or Colors.deepPurple -> 팩토리로 지정 가능.
-        body: Container(
-          decoration: const BoxDecoration( //메모리상 재사용을 위해 const 선언.
-            gradient: LinearGradient( //색조합을 통해 그라데이션 넣는법
-              colors: [
-                Colors.deepPurple,
-                Colors.black26
-              ],
-            ),
-          ),
-          child: const Center(
-            child: Text('Hello World!'),
-          ),
-        ),
+        body: GradientContainer(),
       ),
     ), //쉼표를 쓰면 IDE에서 보기 쉽게 줄넘김을 해준다.
   );
 }
+
