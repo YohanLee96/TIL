@@ -12,14 +12,13 @@ void main() {
    *
    */
   runApp(
-    const MaterialApp(
+    MaterialApp(
       //const를 붙힐려면 하위 위젯들의 생성자가 const 생성자이어야 한다.
       home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 47, 5, 120),
+        backgroundColor: const Color.fromARGB(255, 47, 5, 120),
         // or Colors.deepPurple -> 팩토리로 지정 가능.
-        body: GradientContainer(),
+        body: GradientContainer.purple(),
       ),
     ), //쉼표를 쓰면 IDE에서 보기 쉽게 줄넘김을 해준다.
   );
 }
-
