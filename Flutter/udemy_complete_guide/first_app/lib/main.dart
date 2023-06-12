@@ -12,10 +12,10 @@ void main() {
    *
    */
   runApp(
-    MaterialApp(
+    const MaterialApp(
       //const를 붙힐려면 하위 위젯들의 생성자가 const 생성자이어야 한다.
       home: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 47, 5, 120),
+        backgroundColor: Color.fromARGB(255, 47, 5, 120),
         // or Colors.deepPurple -> 팩토리로 지정 가능.
         body: GradientContainer.purple(),
       ),
