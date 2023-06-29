@@ -1,14 +1,20 @@
-import 'package:adv_basics/questions_summary.dart';
+import 'package:adv_basics/questions_summary/questions_summary.dart';
+import 'package:adv_basics/text/title_text.dart';
 import 'package:flutter/material.dart';
 
 import 'data/questions.dart';
 
 class ResultScreen extends StatelessWidget {
-  const ResultScreen({super.key, required this.chosenAnswers});
+  const ResultScreen({
+    super.key,
+    required this.chosenAnswers,
+    required this.onRestart,
+  });
 
+  final void Function() onRestart;
   final List<String> chosenAnswers;
 
-  List<Map<String, Object>> getSummaryData() {
+  List<Map<String, Object>> get summaryData {
     final List<Map<String, Object>> summary = [];
     for (var i = 0; i < chosenAnswers.length; i++) {
       summary.add({
@@ -23,26 +29,31 @@ class ResultScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<Map<String, Object>> summaryData = getSummaryData();
     final numTotalQuestions = questions.length;
-    final numCorrectQuestions = summaryData.where((data) {
-      return data['correct_answer'] == data['user_answer'];
-    }).length;
+    final numCorrectQuestions = summaryData
+        .where((data) => data['correct_answer'] == data['user_answer'])
+        .length;
 
     return SizedBox(
       width: double.infinity,
       child: Container(
-          margin: const EdgeInsets.all(20),
+          margin: const EdgeInsets.all(40),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                'You answered $numCorrectQuestions out of $numTotalQuestions questions correctly!',
-              ),
+              TitleText(
+                  'You answered $numCorrectQuestions out of $numTotalQuestions questions correctly!'),
               const SizedBox(height: 30),
               QuestionsSummary(summaryData),
               const SizedBox(height: 30),
-              TextButton(onPressed: () {}, child: const Text('Restart Size'))
+              TextButton(
+                onPressed: onRestart,
+                child: const Text('Restart'),
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
+                  foregroundColor: Colors.white
+                ),
+              )
             ],
           )),
     );
