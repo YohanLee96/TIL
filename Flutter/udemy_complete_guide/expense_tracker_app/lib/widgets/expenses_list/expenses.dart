@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:expense_tracker_app/widgets/chart/chart.dart';
 import 'package:expense_tracker_app/widgets/expenses_list/expenses_list.dart';
 import 'package:expense_tracker_app/model/expense.dart';
@@ -31,6 +33,8 @@ class _ExpensesState extends State<Expenses> {
 
   void _openAddExpenseOverlay() {
     showModalBottomSheet(
+      //내장된 카메라의 공간을 Safe Area로 자동지정해서 레이아웃 구성 시, 자동으로 padding을 줘서 구성한다.
+      useSafeArea: true,
       isScrollControlled: true, //키보드가 UI를 가리지 않도록 할려면, 해당 옵션을 true로 준다.
       context: context,
       builder: (ctx) => NewExpense(onAddExpense: _addExpense),
@@ -72,6 +76,8 @@ class _ExpensesState extends State<Expenses> {
 
   @override
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size.width;
+    final height = MediaQuery.of(context).size.height;
     Widget mainContent = const Center(
       child: Text('No Expenses found. Start adding some!'),
     );
@@ -92,12 +98,20 @@ class _ExpensesState extends State<Expenses> {
           )
         ],
       ),
-      body: Column(
-        children: [
-          Chart(expenses: _registerExpenses),
-          Expanded(child: mainContent),
-        ],
-      ),
+      body: width < 600
+          ? Column(
+              children: [
+                Chart(expenses: _registerExpenses),
+                Expanded(child: mainContent),
+              ],
+            )
+          : Row(
+              children: [
+                // Expanded -> 위젯 크기를 제한하기 위해 사용.
+                Expanded(child: Chart(expenses: _registerExpenses)),
+                Expanded(child: mainContent),
+              ],
+            ),
     );
   }
 }
