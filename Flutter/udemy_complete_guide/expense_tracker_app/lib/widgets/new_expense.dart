@@ -1,6 +1,9 @@
 // ignore_for_file: avoid_print
 
+import 'dart:io';
+
 import 'package:expense_tracker_app/model/expense.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NewExpense extends StatefulWidget {
@@ -38,30 +41,49 @@ class _NewExpenseState extends State<NewExpense> {
     });
   }
 
+  void _showDialog() {
+    if (Platform.isIOS) {
+      //ios에 최적화된 알람창.
+      showCupertinoDialog(
+          context: context,
+          builder: (ctx) => CupertinoAlertDialog(
+                title: const Text('Invalid input'),
+                content: const Text(
+                    'Please make sure a valid title, amount, date and category was entered.'),
+                actions: [
+                  TextButton(
+                      onPressed: () {
+                        Navigator.pop(ctx);
+                      },
+                      child: const Text('Okay'))
+                ],
+              ));
+    } else {
+      showDialog(
+        context: context,
+        builder: (ctx) => AlertDialog(
+          title: const Text('Invalid input'),
+          content: const Text(
+              'Please make sure a valid title, amount, date and category was entered.'),
+          actions: [
+            TextButton(
+                onPressed: () {
+                  Navigator.pop(ctx);
+                },
+                child: const Text('Okay'))
+          ],
+        ),
+      );
+    }
+  }
+
   void _submitExpenseData() {
     final enteredAmount = double.tryParse(_amountController.text)!;
     final amountIsINvalid = enteredAmount == null || enteredAmount <= 0;
-    if (_titleController.text
-        .trim()
-        .isEmpty ||
+    if (_titleController.text.trim().isEmpty ||
         amountIsINvalid ||
         _selectedDate == null) {
-      showDialog(
-        context: context,
-        builder: (ctx) =>
-            AlertDialog(
-              title: const Text('Invalid input'),
-              content: const Text(
-                  'Please make sure a valid title, amount, date and category was entered.'),
-              actions: [
-                TextButton(
-                    onPressed: () {
-                      Navigator.pop(ctx);
-                    },
-                    child: const Text('Okay'))
-              ],
-            ),
-      );
+      _showDialog();
     }
 
     widget.onAddExpense(Expense(
@@ -135,12 +157,12 @@ class _NewExpenseState extends State<NewExpense> {
                       items: Category.values
                           .map(
                             (category) => DropdownMenuItem(
-                          value: category,
-                          child: Text(
-                            category.name.toUpperCase(),
-                          ),
-                        ),
-                      )
+                              value: category,
+                              child: Text(
+                                category.name.toUpperCase(),
+                              ),
+                            ),
+                          )
                           .toList(),
                       onChanged: (value) {
                         if (value == null) {
@@ -230,12 +252,12 @@ class _NewExpenseState extends State<NewExpense> {
                         items: Category.values
                             .map(
                               (category) => DropdownMenuItem(
-                            value: category,
-                            child: Text(
-                              category.name.toUpperCase(),
-                            ),
-                          ),
-                        )
+                                value: category,
+                                child: Text(
+                                  category.name.toUpperCase(),
+                                ),
+                              ),
+                            )
                             .toList(),
                         onChanged: (value) {
                           if (value == null) {
