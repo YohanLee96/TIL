@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_internals/keys/keys.dart';
-import 'package:flutter_internals/ui_updates_demo.dart';
 
 
 void main() {
