@@ -33,7 +33,9 @@ class _TabsScreenState extends State<TabsScreen> {
   }
 
   void _showInfoMessage(String message) {
+    //기존에 표출된 스낵바 제거.
     ScaffoldMessenger.of(context).clearSnackBars();
+    //새롭게 스낵바 표출.
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text(message),
