@@ -8,16 +8,21 @@ class MealsScreen extends StatelessWidget {
   const MealsScreen({
     super.key,
     required this.meals,
-    required this.title,
+    required this.selectFavorite,
+    this.title,
   });
 
-  final String title;
+  final String? title;
   final List<Meal> meals;
+  final void Function(Meal meal) selectFavorite;
 
   void selectMeal(BuildContext context, Meal meal) {
     Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (ctx) => MealDetailsScreen(meal: meal),
+        builder: (ctx) => MealDetailsScreen(
+          meal: meal,
+          selectFavorite: selectFavorite,
+        ),
       ),
     );
   }
@@ -26,10 +31,12 @@ class MealsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Widget content = ListView.builder(
       itemCount: meals.length,
-      itemBuilder: (ctx, index) =>
-          MealItem(meal: meals[index], onSelectMeal: (meal) {
-            selectMeal(context, meals[index]);
-          },),
+      itemBuilder: (ctx, index) => MealItem(
+        meal: meals[index],
+        onSelectMeal: (meal) {
+          selectMeal(context, meals[index]);
+        },
+      ),
     );
     if (meals.isEmpty) {
       content = Center(
@@ -38,36 +45,30 @@ class MealsScreen extends StatelessWidget {
           children: [
             Text(
               '음식이 존재하지 않아요!',
-              style: Theme
-                  .of(context)
-                  .textTheme
-                  .headlineLarge!
-                  .copyWith(
-                color: Theme
-                    .of(context)
-                    .colorScheme
-                    .onBackground,
-              ),
+              style: Theme.of(context).textTheme.headlineLarge!.copyWith(
+                    color: Theme.of(context).colorScheme.onBackground,
+                  ),
             ),
             const SizedBox(height: 16),
             Text(
               '다른 카테고리를 확인해보세요!',
-              style: Theme
-                  .of(context)
+              style: Theme.of(context)
                   .textTheme
                   .bodyLarge!
-                  .copyWith(color: Theme
-                  .of(context)
-                  .colorScheme
-                  .onBackground),
+                  .copyWith(color: Theme.of(context).colorScheme.onBackground),
             )
           ],
         ),
       );
     }
+
+    if (title == null) {
+      return content;
+    }
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(title!),
       ),
       body: content,
     );
