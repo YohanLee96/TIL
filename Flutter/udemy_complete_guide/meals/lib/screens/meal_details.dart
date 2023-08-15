@@ -14,6 +14,10 @@ class MealDetailsScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final favoriteMeals = ref.watch(favoritesMealsProvider);
+
+    final isFavorite = favoriteMeals.contains(meal);
+
     return Scaffold(
       appBar: AppBar(
         title: Text(meal.title),
@@ -28,7 +32,7 @@ class MealDetailsScreen extends ConsumerWidget {
                 SnackBar(content: Text(wasAdded ? '식사가 즐겨찾기에 추가되었습니다.' : '즐겨찾기에서 제거되었습니다.'))
               );
             },
-            icon: const Icon(Icons.star),
+            icon: Icon(isFavorite ? Icons.star : Icons.star_border),
           )
         ],
       ),
