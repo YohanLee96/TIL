@@ -79,9 +79,18 @@ class _CategoriesScreenState extends State<CategoriesScreen>
             )
         ],
       ),
-      //Padding만 애니메이션을 적용하기위해 builder에 적용.
-      builder: (context, child) => Padding(
-        padding: EdgeInsets.only(top: 100 - _animationController.value * 100),
+      //1. Padding만 애니메이션을 적용하기위해 builder에 적용.
+      //2. 부드러운 애니메이션을 적용하기위해 SlideTransition적용.
+      builder: (context, child) => SlideTransition(
+        position: Tween(
+          begin: const Offset(0, 0.3),
+          end: const Offset(0, 0),
+        ).animate(
+          CurvedAnimation(
+            parent: _animationController,
+            curve: Curves.easeInOut,
+          ),
+        ),
         child: child,
       ),
     );

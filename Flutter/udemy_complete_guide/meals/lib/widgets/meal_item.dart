@@ -42,13 +42,16 @@ class MealItem extends StatelessWidget {
         //Stack : 화면위에 여러 위젯을 배치하고자 할 때, 사용.
         child: Stack(
           children: [
-            FadeInImage(
-              placeholder: MemoryImage(kTransparentImage),
-              image: NetworkImage(meal.imageUrl),
-              fit: BoxFit.cover,
-              //이미지가 잘리지않도록 이미지가 클 경우, 위젯에 맞게 축소시킨다.
-              height: 200,
-              width: double.infinity,
+            Hero( //애니메이션이 필요한 위젯만 Wrapping 하자. 
+              tag: meal.id,
+              child: FadeInImage(
+                placeholder: MemoryImage(kTransparentImage),
+                image: NetworkImage(meal.imageUrl),
+                fit: BoxFit.cover,
+                //이미지가 잘리지않도록 이미지가 클 경우, 위젯에 맞게 축소시킨다.
+                height: 200,
+                width: double.infinity,
+              ),
             ),
             Positioned(
               bottom: 0,
