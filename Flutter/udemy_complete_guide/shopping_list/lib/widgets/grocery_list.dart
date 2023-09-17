@@ -16,30 +16,26 @@ class GroceryList extends StatefulWidget {
 
 class _GroceryListState extends State<GroceryList> {
   List<GroceryItem> _groceryItems = [];
-  var _isLoading = true;
+  late Future<List<GroceryItem>> _loadedItems;
   String? _error;
 
   @override
   void initState() {
     super.initState();
-    _loadItems();
+    _loadedItems = _loadItems();
   }
 
-  void _loadItems() async {
+  Future<List<GroceryItem>> _loadItems() async {
     final url = Uri.https(
-      'flutter-example-project-3cbd6-default-rtdb.firebaseio.com',
+        'flutter-example-project-3cbd6-default-rtdb.firebaseio.com',
         '/shopping-list.json');
+
     final response = await http.get(url);
     if (response.statusCode >= 400) {
-      setState(() {
-        _error = '데이터를 불러오는 도중 실패하였습니다. 잠시 후 다시 시도해주세요.';
-      });
+      throw Exception('데이터를 불러올 수 없습니다. 잠시 후 다시 시도해주세요.');
     }
-    if(response.body == 'null') {
-      setState(() {
-        _isLoading = false;
-      });
-      return;
+    if (response.body == 'null') {
+      return [];
     }
     final Map<String, dynamic> listData = json.decode(response.body);
     final List<GroceryItem> loadedItems = [];
@@ -54,11 +50,8 @@ class _GroceryListState extends State<GroceryList> {
         quantity: item.value['quantity'],
         category: category,
       ));
-      setState(() {
-        _groceryItems = loadedItems;
-        _isLoading = false;
-      });
     }
+    return loadedItems;
   }
 
   void _addItem(BuildContext context) async {
@@ -82,9 +75,11 @@ class _GroceryListState extends State<GroceryList> {
     setState(() {
       _groceryItems.remove(item);
     });
-    final url = Uri.https('flutter-example-project-3cbd6-default-rtdb.firebaseio.com', 'shopping-list/${item.id}.json');
+    final url = Uri.https(
+        'flutter-example-project-3cbd6-default-rtdb.firebaseio.com',
+        'shopping-list/${item.id}.json');
     final response = await http.delete(url);
-    if(response.statusCode >= 400) {
+    if (response.statusCode >= 400) {
       setState(() {
         _groceryItems.insert(index, item);
       });
@@ -93,37 +88,6 @@ class _GroceryListState extends State<GroceryList> {
 
   @override
   Widget build(BuildContext context) {
-    Widget content = const Center(child: Text('No items added yet'));
-    if (_isLoading) {
-      content = const Center(child: CircularProgressIndicator());
-    }
-    if (_groceryItems.isNotEmpty) {
-      content = ListView.builder(
-        itemCount: _groceryItems.length,
-        itemBuilder: (ctx, index) =>
-            Dismissible(
-              key: ValueKey(_groceryItems[index].id),
-              onDismissed: (direction) {
-                // 아이템을 밀었을때 이벤트.
-                _removeItem(_groceryItems[index]);
-              },
-              child: ListTile(
-                title: Text(_groceryItems[index].name),
-                leading: Container(
-                  width: 24,
-                  height: 24,
-                  color: _groceryItems[index].category.color,
-                ),
-                trailing: Text(
-                  _groceryItems[index].quantity.toString(),
-                ),
-              ),
-            ),
-      );
-    }
-    if (_error != null) {
-      content = Center(child: Text(_error!),);
-    }
     return Scaffold(
       appBar: AppBar(
         title: const Text('Your Groceries'),
@@ -136,7 +100,48 @@ class _GroceryListState extends State<GroceryList> {
           )
         ],
       ),
-      body: content,
+      body: FutureBuilder(
+        future: _loadedItems,
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            //데이터를 불러오고있는 상태
+            return const Center(child: CircularProgressIndicator());
+          }
+          if (snapshot.hasError) {
+            //API 호출 도중 에러가 발생했을 경우,
+            return Center(
+              child: Text(snapshot.error.toString()),
+            );
+          }
+
+          if (snapshot.data!.isEmpty) {
+            //데이터를 성공적으로 불러왔으나, 비어있을 경우,
+            return const Center(child: Text('No items added yet'));
+          }
+
+          return ListView.builder(
+            itemCount: snapshot.data!.length,
+            itemBuilder: (ctx, index) => Dismissible(
+              key: ValueKey(snapshot.data![index].id),
+              onDismissed: (direction) {
+                // 아이템을 밀었을때 이벤트.
+                _removeItem(snapshot.data![index]);
+              },
+              child: ListTile(
+                title: Text(snapshot.data![index].name),
+                leading: Container(
+                  width: 24,
+                  height: 24,
+                  color: snapshot.data![index].category.color,
+                ),
+                trailing: Text(
+                  snapshot.data![index].quantity.toString(),
+                ),
+              ),
+            ),
+          );
+        },
+      ),
     );
   }
 }
