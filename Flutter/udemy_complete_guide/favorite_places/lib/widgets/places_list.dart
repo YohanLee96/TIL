@@ -1,7 +1,7 @@
-import 'package:flutter/cupertino.dart';
+import 'package:favorite_places/screens/place_detail.dart';
 import 'package:flutter/material.dart';
 
-import '../models/place.dart';
+import 'package:favorite_places/models/place.dart';
 
 class PlacesList extends StatelessWidget {
   const PlacesList({super.key, required this.places});
@@ -13,10 +13,10 @@ class PlacesList extends StatelessWidget {
     if (places.isEmpty) {
       return Center(
         child: Text(
-            '장소가 추가되지 않았습니다.',
+          '장소가 추가되지 않았습니다.',
           style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-            color: Theme.of(context).colorScheme.onBackground,
-          ),
+                color: Theme.of(context).colorScheme.onBackground,
+              ),
         ),
       );
     }
@@ -30,6 +30,13 @@ class PlacesList extends StatelessWidget {
                 color: Theme.of(context).colorScheme.onBackground,
               ),
         ),
+        onTap: () {
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (ctx) => PlaceDetailScreen(place: places[index]),
+            ),
+          );
+        },
       ),
     );
   }
