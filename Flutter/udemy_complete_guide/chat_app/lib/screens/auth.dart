@@ -1,6 +1,8 @@
 import 'dart:io';
 
 import 'package:chat_app/widgets/user_image_picker.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -20,7 +22,9 @@ class _AuthScreenState extends State<AuthScreen> {
   var _isLogin = true;
   var _enteredEmail = '';
   var _enteredPassword = '';
+  var _enteredUserName = '';
   File? _selectedImage;
+  var _isAuthenticating = false;
 
   void _submit() async {
     final isValid = _form.currentState!.validate();
@@ -31,16 +35,32 @@ class _AuthScreenState extends State<AuthScreen> {
 
     _form.currentState!.save();
     try {
+      setState(() {
+        _isAuthenticating = true;
+      });
       if (_isLogin) {
         //로그인 모드
         final userCredentials = await _firebase.signInWithEmailAndPassword(
             email: _enteredEmail, password: _enteredPassword);
-        print(userCredentials);
       } else {
         //회원가입 모드
         final userCredentials = await _firebase.createUserWithEmailAndPassword(
             email: _enteredEmail, password: _enteredPassword);
-        print(userCredentials);
+        final storageRef = FirebaseStorage.instance
+            .ref()
+            .child('user_images')
+            .child('${userCredentials.user!.uid}.jpg');
+
+        await storageRef.putFile(_selectedImage!);
+        final imageUrl = await storageRef.getDownloadURL();
+        FirebaseFirestore.instance
+            .collection('users') //users라는 컬렉션을 생성.
+            .doc(userCredentials.user!.uid)
+            .set({
+          'username': _enteredUserName,
+          'email': _enteredEmail,
+          'image_url': imageUrl
+        }); //users컬렉션에 uid식별자를 가진 Doc 생성.
       }
     } on FirebaseAuthException catch (error) {
       // if (error.code == 'email-already-in-use') {}
@@ -48,6 +68,9 @@ class _AuthScreenState extends State<AuthScreen> {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         content: Text(error.message ?? '인증 실패'),
       ));
+      setState(() {
+        _isAuthenticating = false;
+      });
     }
   }
 
@@ -80,12 +103,13 @@ class _AuthScreenState extends State<AuthScreen> {
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          if(!_isLogin) UserImagePicker(onPickImage: (pickedImage) {
-                            _selectedImage = pickedImage;
-                          }),
+                          if (!_isLogin)
+                            UserImagePicker(onPickImage: (pickedImage) {
+                              _selectedImage = pickedImage;
+                            }),
                           TextFormField(
                             decoration: const InputDecoration(
-                                labelText: 'Email Address'),
+                                labelText: '이메일'),
                             keyboardType: TextInputType.emailAddress,
                             autocorrect: false,
                             //자동입력 방지
@@ -103,9 +127,25 @@ class _AuthScreenState extends State<AuthScreen> {
                               _enteredEmail = value!;
                             },
                           ),
+                          if(!_isLogin)
+                            TextFormField(
+                              decoration: const InputDecoration(labelText: '이름'),
+                              enableSuggestions: false,
+                              validator: (value) {
+                                if (value == null ||
+                                    value.isEmpty ||
+                                    value.trim().length < 4) {
+                                  return '유효한 이름을 작성해주세요.(최소 4글자)';
+                                }
+                                return null;
+                              },
+                              onSaved: (value) {
+                                _enteredUserName = value!;
+                              },
+                            ),
                           TextFormField(
                             decoration:
-                                const InputDecoration(labelText: 'Password'),
+                                const InputDecoration(labelText: '패스워드'),
                             obscureText: true, //입력값 패스워드처리..
                             validator: (value) {
                               if (value == null || value.trim().length < 6) {
@@ -118,24 +158,28 @@ class _AuthScreenState extends State<AuthScreen> {
                             },
                           ),
                           const SizedBox(height: 12),
-                          ElevatedButton(
-                            onPressed: _submit,
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Theme.of(context)
-                                  .colorScheme
-                                  .primaryContainer,
+                          if (_isAuthenticating)
+                            const CircularProgressIndicator(),
+                          if (!_isAuthenticating)
+                            ElevatedButton(
+                              onPressed: _submit,
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Theme.of(context)
+                                    .colorScheme
+                                    .primaryContainer,
+                              ),
+                              child: Text(_isLogin ? '로그인' : '회원가입'),
                             ),
-                            child: Text(_isLogin ? '로그인' : '회원가입'),
-                          ),
-                          TextButton(
-                            onPressed: () {
-                              setState(() {
-                                _isLogin = !_isLogin;
-                              });
-                            },
-                            child:
-                                Text(_isLogin ? '새 계정 생성하기' : '이미 계정이 존재합니다.'),
-                          )
+                          if (!_isAuthenticating)
+                            TextButton(
+                              onPressed: () {
+                                setState(() {
+                                  _isLogin = !_isLogin;
+                                });
+                              },
+                              child: Text(
+                                  _isLogin ? '새 계정 생성하기' : '이미 계정이 존재합니다.'),
+                            )
                         ],
                       ),
                     ),

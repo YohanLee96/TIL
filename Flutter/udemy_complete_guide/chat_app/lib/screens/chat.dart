@@ -1,3 +1,5 @@
+import 'package:chat_app/widgets/chat_messages.dart';
+import 'package:chat_app/widgets/new_message.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +13,7 @@ class ChatScreen extends StatelessWidget {
         title: const Text('플러터 채팅'),
         actions: [
           IconButton(
-              onPressed: (){
+              onPressed: () {
                 FirebaseAuth.instance.signOut();
               },
               icon: Icon(
@@ -20,8 +22,13 @@ class ChatScreen extends StatelessWidget {
               ))
         ],
       ),
-      body: const Center(
-        child: Text('로그인 성공!'),
+      body: Column(
+        children: const [
+          Expanded(
+            child: ChatMessages(),
+          ),
+          NewMessage()
+        ],
       ),
     );
   }
