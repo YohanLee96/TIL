@@ -21,4 +21,5 @@ fun main() = runBlocking<Unit> {
             println("[${Thread.currentThread().name}] 실행")
         }
     }
+    println("end!!")
 }

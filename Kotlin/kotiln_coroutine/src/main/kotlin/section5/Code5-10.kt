@@ -11,6 +11,7 @@ fun main() = runBlocking<Unit> {
         while (this.isActive) {
             println("whileJob이 실행되었습니다.")
 
+
         }
     }
     delay(100L)
