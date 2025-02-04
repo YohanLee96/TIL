@@ -6,6 +6,9 @@ import kotlinx.coroutines.delay
 
 import kotlinx.coroutines.runBlocking
 
+/**
+ * 일시 중단 함수를 사용하면서 코루틴 빌더 함수를 사용하는법.
+ */
 fun main() = runBlocking<Unit> {
     val startTime = System.currentTimeMillis()
     val results = searchByKeyword("coroutine")

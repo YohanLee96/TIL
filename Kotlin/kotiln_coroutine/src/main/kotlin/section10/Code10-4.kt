@@ -2,6 +2,9 @@ package section10
 
 import kotlinx.coroutines.*
 
+/**
+ * 자식 코루틴의 에러전파를 supervisorScope를 통해 방지하는법.
+ */
 fun main() = runBlocking<Unit> {
     val startTime = System.currentTimeMillis()
     val results = searchByKeyword2("coroutine")
