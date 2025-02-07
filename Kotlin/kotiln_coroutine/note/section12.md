@@ -47,4 +47,20 @@
 ## CoroutineStart.UNDISPATCHED
 - CoroutineStart.UNDISPATCHED옵션을 사용하면 코루틴이 실행될 때 CoroutineDispatcher를 거치지 않고 **메인 스레드에서 즉시 실행된다.** (Code12-6.kt 참조)
 ![img.png](image/s12_3.png)
-- CoroutineStart.UNDISPATCHED옵션이 적용되더라도, 일시중단 후 재개될 때는 CoroutineDispatcher를 거쳐서 실행된다.(Code12-76.kt 참조)
+- CoroutineStart.UNDISPATCHED옵션이 적용되더라도, 일시중단 후 재개될 때는 CoroutineDispatcher를 거쳐서 실행된다.(Code12-6.kt 참조)
+---
+# 무제한 디스패처
+- 무제한 디스패처란? 코루틴을 자신을 실행시킨 스레드에서 즉시 실행하도록 만드는 디스패처.
+- 무제한 디스패처를 사용해 실행한 코루틴은 **중단 시점 이후의 재개를 코루틴을 재개 시킨 스레드에서 한다.(Code12-10.kt 참조)
+- CoroutineStart.UNDISPATCHED 옵션이 적용된 코루틴은, 재개 시 CoroutineDispatcher에 실행 요청된다.(Code12-11.kt 참조)
+---
+# 코루틴의 동작 방식과 Continuation
+## Continuation Passing Style
+- 일반적인 코드가 동작할 때는 작업이 쓰레드를 점유해 코드 라인이 순서대로 동작한다.
+- 코루틴은 코드를 실행하는 도중 일시중단하고 필요한 시점에 다시 재개하는 기능을 지원한다.(일시중단시점에 쓰레드가 블록되지 않는다.)
+- 코루틴은 어떻게 스레드를 블로킹하지 않고, 일시중단과 재개를 가능하게 할까?
+  - 코루틴은 **Continuation Passing Style**이라 불리는 프로그래밍 방식을 통해 실행 정보를 저장하고 전달한다.
+  - 코루틴은 일시 중단 시점에 남은 작업 정보가 Continuation객체에 저장된다.
+  - 작업의 재개는 Continuation.resumeWith() 함수를 호출할때 발생한다.
+  - Continuation.resumeWith() 함수가 호출되면 Continuation객체에 저장된 작업 정보를 통해 남은 작업들이 마저 실행된다.
+  - suspendCancellableCoroutine을 통해 Continuation를 직접 다룰 수도 있다. (Code12-12.kt 참조)
