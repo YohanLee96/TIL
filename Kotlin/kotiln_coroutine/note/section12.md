@@ -64,3 +64,4 @@
   - 작업의 재개는 Continuation.resumeWith() 함수를 호출할때 발생한다.
   - Continuation.resumeWith() 함수가 호출되면 Continuation객체에 저장된 작업 정보를 통해 남은 작업들이 마저 실행된다.
   - suspendCancellableCoroutine을 통해 Continuation를 직접 다룰 수도 있다. (Code12-12.kt 참조)
+  - 물론 Continuation을 직접 다루는것은 권장하지 않으며, 대부분의 상황에서는 코루틴 라이브러리의 고수준 API를 사용해도 충분하기때문에 사용할일 별로 없다.
